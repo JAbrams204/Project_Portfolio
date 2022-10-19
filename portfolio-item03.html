@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJay Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Updated these with new fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/#work" class="nav__link">
+                    <img src="img/dev_icon.png" alt="">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Loan Calculator</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Loan Calculator App</p>
+            <img src="img/LoanCalculator01.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <div class="portfolio-item-individual__btn">
+                <a href="https://jabrams204.github.io/Loan_Calculator_App/" class="btn" target="_blank">Click for Demo</a>
+                <a href="https://github.com/JAbrams204/Loan_Calculator_App/" class="btn" target="_blank">Repository</a>
+            </div>
+            <p class="portfolio-item-individual__text">This is a plain vanilla JavaScipt project of a simple Loan Calculator Application that can be used to compute loan amount for mortgages, car notes or any other type of repayment loan arrangement. The application has three input fields namely: Loan Amount, Interest Rate and Load Duration. The result of the calculation based on the input values produce the monthly payment amount, total payment amount and the interest rate amount.</p>
+
+            <p class="portfolio-item-individual__text">Primarily, I have used two JavaScript functions - (calculateResults and showError) to perform any computation required by the Application and to display any exception when computations were impossible due to incorrect information being provided by the user.</p>
+
+            <img src="img/LoanCalculator02.png" alt="">
+
+            <p class="portfolio-item-individual__text">The calculateResults function uses an addEventListener method to perform the computation upon clicking the submit buttom after the relevant information has been provided in the input fields for the loan. The result generated are then displayed in the result section of the Application with a two seconds waiting period that is accomplished using the setTimeout method which aids in enhancing the user's experience.</p>
+
+            <p class="portfolio-item-individual__text">The showError function, which is triggered when incorrect values are provided by the user, will result in an error message being displayed. Similarly, this message disappers within three seconds with the use of the setTimeout method for better user experience.</p>
+
+            <p class="portfolio-item-individual__text">The application User Interface design was implemented with the Bootstrap front-end component library inconjuction with J-Query and popper.js dependencies.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:abrams.jeremiah@gmail.com" class="footer__link">abrams.jeremiah@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com">
+                        <i class="fab fa-linkedin"></i></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <!-- <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJay Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Updated these with new fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/#work" class="nav__link">
+                    <img src="img/dev_icon.png" alt="">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Game</strong>of War
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Game App</p>
+            <img src="img/GameOfWar01.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <div class="portfolio-item-individual__btn">
+                <a href="https://jabrams204.github.io/Game_of_War_App/" class="btn" target="_blank">Click for Demo</a>
+                <a href="https://github.com/JAbrams204/Game_of_War_App/" class="btn" target="_blank">Repository</a>
+            </div>
+            <p class="portfolio-item-individual__text">This is a game application that utilizes plain vanilla JavaScript and an API to create a modified version of the Game of War. I have made use of the DeckofCards API, which provides new deck of playing cards used in Online card playing games.</p>
+
+            <p class="portfolio-item-individual__text">The main features of this game consist of two functions - (handleClick & determineCardWinner). The handleClick function fetches the new deck of cards using the deckofcards API by using the deckId property of the JSON data provided from the API calls while the determineCardWinner function is responsible for the algorithmic logic of evaluating each player's card and determining the winner of the game.</p>
+
+            <img src="img/GameOfWar02.png" alt="">
+            
+            <p class="portfolio-item-individual__text">The two buttons featured on the application - (New Deck & Draw) derive their data from the fetched information using the API embedded in the handleClick function. The New Deck button generates a deck of cards consisting of 52 new playing cards, which reduces by two as the Draw button is triggered each time a game is played. Consequently, the New Deck is reduced to zero over 26 times of play.</p>
+            
+            <p class="portfolio-item-individual__text">For the background image, I have used a green poker-table image. To position the New Deck button and the Draw button at the top and bottom respectively, I used CSS flex-box to layout the buttons with the following properties: flex-direction of column and a justify-content of space-between.</p>
+        </div>
+        <div class="portfolio-item-individual__api">
+            <p>
+                <a class="api" href="https://deckofcardsapi.com//" target="_blank">DeckofCards API Documentation</a>
+                <br>
+            </p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:abrams.jeremiah@gmail.com" class="footer__link">abrams.jeremiah@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com">
+                        <i class="fab fa-linkedin"></i></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <!-- <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
